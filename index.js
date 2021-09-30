@@ -5,8 +5,6 @@ const passport = require('passport')
 const discordStrategy = require('./src/strategies/discordStrategy')
 const db = require('./src/database/database.js')
 
-db.then(() => console.log("connected"))
-
 // INIT
 const app = express();
 
