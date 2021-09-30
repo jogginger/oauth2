@@ -29,6 +29,9 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.use('/auth', authroute)
+app.get('/', (req, res) => {
+    res.send("hi")
+})
 
 app.listen(process.env.PORT || 3001, () => {
     console.log(`listening to port ${process.env.PORT || 3001}`);
